@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+
+    <!-- head - tag to store meta-data: fonts, stylesheets, libraries-->
+    <head>
+        <title>Just for fun</title>
+        <meta charset="utf-8">
+        <meta name='viewport', content="width-device-width, initial-scale=1">
+        
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Didact+Gothic|Press+Start+2P|Zilla+Slab+Highlight&display=swap" 
+        rel="stylesheet"> 
+
+        <!-- Icons -->
+        <link rel="icon", type='image/png', href='images/favicon.png'>
+
+        <!-- CSS - Adding css componenet of Bootstrap framework-->
+        
+        <link rel='stylesheet',type='text/css', href='css/bootstrap4.min.css'>
+        <link rel="stylesheet", type="text/css", href="css/style.css">
+        
+        <!-- Font awesome -->
+        <link rel="stylesheet", href='css/font-awesome.min.css'>
+    </head>
+
+    <body>
+
+        <!--Header-->
+        <header class='header' id='HOME'>
+            <div class="container" role="navigation" >
+ 
+                <nav class="navbar navbar-expand-md navbar-dark navbar-default fixed-top ">
+                    
+                    <!--Collapse button -->
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style='color:white'>
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#HOME">Jeff Won </a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="#ABOUT">About</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="#PROJECT">Project</a>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav navbar-right" >
+                            <li><a class="nav-link" style='margin-right:50px; padding-left:0px' href="#CONTACT">Contact</a></li>
+                        </ul>
+                        
+                    </div>
+
+                </nav>
+
+            </div>
+            
+            <!-- Bootstrap navbar -->
+            
+
+
+            <div class="header-overlay">
+
+                <div class='container'>
+                    
+                    <!-- First row of homepage container - NavBar-->
+                    
+
+                    <!-- Second row - Main Content -->
+                    <div class='row'>
+                        <div class='center pressStart2P'>
+                            <h1 class='titleMain'>JEFF WON</h1>
+                            <h3 style="margin-top: 0" class='textMain'>In the process of exploring different
+                                aspects of technology and expanding my interests. Whilst self learning topics in computer engineering through research & development. </h3>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </header>
+        
+        
+        <!-- About Me section -->
+        <div class="container-fluid darkBackground" id='ABOUT'>
+            <div class='container'>
+                <div class='row'>
+                    <div class='col-md-8'>
+                        <h3 class='headSub'>About Me</h3>
+                        <p class='textSub pressStart2P'>IAmA recent graduate of University of Waterloo with a background in Applied Math & Statistics.
+                            I'm using this time to explore different frameworks and languages while learning how to become a better engineer through 
+                            building interesting and meaningful projects. I'll be returning to my Alma Mata for the graduate electric & computer engineering 
+                            program Sept. 2020</p>
+                        <p class="textSub pressStart2P">Here are my interests and a few technologies I have recently been working with.</p>
+                    </div>
+
+                    <div class='col-md-4'>
+                        <!-- Insert Profile Picture Here -->
+
+                    </div>
+                </div>
+
+                <!-- Row for Interest & Skills -->
+                <div class='row'>
+                    <div class='col-lg-6 listAbout pressStart2P'>
+                        <h4 >Interests</h4>
+                        <ul class='aboutContainer'>
+                            <li class='itemList'>Lightweight Cryptography. Security and Privacy of embedded IoT</li>
+                            <li class='itemList'>Scalable AI/ML, computer vision & health care applications</li>
+                            <li class='itemList'>Cybersecurity</li>
+                            <li class='itemList'>Augmented Reality</li>
+                            <li class='itemList'>Cloud technologies</li>
+                        </ul>
+                    </div>
+
+                    <div class='col-lg-6 listAbout pressStart2P'>
+                        <h4>Technologies</h4>
+                        <ul class='aboutContainer'>
+                            <li class='itemList'>Python</li>
+                            <li class='itemList'>JavaScript</li>
+                            <li class='itemList'>Java</li>
+                            <li class='itemList'>HTML & CSS</li>
+                            <li class='itemList'>R</li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--- Project Section - Grid Style: Title, Description, Language -->
+        <div class='container project-grid' id='PROJECT'>
+            <h3 class='project-head'>Noteworthy Projects & Achievements</h3>
+
+            <!-- TESTING -->
+            <div class="card-deck">
+                <div class="card project-box">
+                    <div class="card-body">
+                        <h4 class='card-header'>Pose Estimation with Multi-Stage CNNs</h4>
+                            <p class="card-text">2D pose estimation project at my internship to detect and 
+                                localize altheletes for sports analytics.</p>
+                    </div>
+                    <div class="card-footer">
+                        <ul>
+                            <li class='project-language'>Python</li>
+                            <li class='project-language'>PyTorch</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card project-box">
+                    <div class="card-body">
+                        <h4 class='card-header'>Facial Recognition Security Cam with Raspberry Pi</h4>
+                            <p class="card-text">A simple smart cam built with OpenCV, TensorFlow, and open-sourced MotionEyeOS
+                                mounted on a Raspberry Pi.</p>
+                    </div>
+                    <div class="card-footer">
+                        <ul>
+                            <li class='project-language'>Python</li>
+                            <li class='project-language'>OpenCV</li>
+                            <li class='project-language'>TensorFlow</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card project-box">
+                    <div class="card-body">
+                        <h4 class='card-header'>Microsoft Malware Detection Kaggle Challenge</h4>
+                            <p class="card-text">Data science project for my Statistics class at UWaterloo to detect malware
+                                on a machine with ensembled methods.</p>
+                    </div>
+                    <div class="card-footer">
+                        <ul>
+                            <li class='project-language'>Python</li>
+                            <li class='project-language'>OpenCV</li>
+                            <li class='project-language'>TensorFlow</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+            
+            <div class="card-deck">
+                <div class="card project-box" style='top:30px'>
+                    <div class="card-body">
+                        <h4 class='card-header'>UW x ASA Datathon</h4>
+                            <p class="card-text">A data science competition to analyze althetes' performance hosted by 
+                                the American Statistics Association at UWaterloo. Learn how our group won 
+                                one of the awards for this challenge</p>
+                    </div>
+                    <div class="card-footer">
+                        <ul>
+                            <li class='project-language'>Python</li>
+                            <li class='project-language'>R</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card project-box" style='top:30px'>
+                    <div class="card-body">
+                        <h4 class='card-header'>Android App</h4>
+                            <p class="card-text">OTW</p>
+                    </div>
+                    <div class="card-footer">
+                        <ul>
+                            <li class='project-language'>Java</li>
+                            <li class='project-language'>ReactNative</li>
+                            <li class='project-language'>Node.js</li>
+                        </ul>
+                    </div>
+                </div>
+
+                
+
+            </div>
+            <!-- TEST -->
+
+            
+
+        </div>
+
+        <!-- Contact/Social Media section -->
+        <div class='container-fluid contact-form' id='CONTACT'>
+
+            <div class='container'>
+                <div class='row'>
+                    <div class='col-md-12 col-md-offset-5'>
+                        <div class='headContact'>
+                            <h2>Contact</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- contact form -->
+            <div class='container'>
+                    <div class="row">
+                        <div class='col-md-4'>
+                            <form>
+                                <div class="form-group">
+                                    <input type='text', class='form-control', id='name', required='' value='' placeholder="Name">
+                                </div>
+                                <div class="form-group">
+                                    <input type='email', class='form-control', id='email', required='' value='' placeholder="Email Address">
+                                </div>
+                                <div class="form-group">
+                                    <input type='text', class='form-control', id='subject', required='' value='' placeholder="Subject">
+                                </div>
+    
+                            </form>
+                        </div>
+                        <!-- Name , Email. Reason - Form[Label(input), Label(input),...]-->
+                
+                        <!-- Message -->
+                        <div class='col-md-8'>
+                            <textarea class='form-control', id='message', rows='11' cols='10'
+                            placeholder="Message"></textarea>
+                            <button type="button" class='btn btn-default submit-btn form-submit'>SEND</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Adding social icons -->
+            <div class='container'>
+                <div class='row'>
+                    <div class='col-md-12'>
+                        <div class="social-icons">
+                            <ul>
+                                <li><a href='#'><i class='fa fa-facebook'></i></a></li>
+                                <li><a href='#'><i class='fa fa-twitter'></i></a></li>
+                                <li><a href='#'><i class='fa fa-linkedin'></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!--Footer Section: (Home, About, Project, Contact) point back to section -->
+        <footer class="footer">
+
+            <div class="container">
+
+                <div class='row'>
+
+                    <div class='col-md-3'>
+                        <li><a style="color: white;" href="#HOME">Home</a></li>
+                    </div>
+
+                    <div class='col-md-3'>
+                        <li><a style="color: white;" href="#ABOUT">About</a></li>
+                    </div>
+
+                    <div class='col-md-3'>
+                        <li><a style="color: white;" href="#PROJECT">Projects</a></li>
+                    </div>
+
+                    <div class='col-md-3'>
+                        <li><a style="color: white;" href="#CONTACT">Contact</a></li>
+                    </div>
+
+                    
+                </div>
+
+            </div>
+    
+        </footer>
+    
+
+        <!-- Bootstrap JavaScript -->
+        <script src='js/jquery.js'></script>
+
+        <script src="js/bootstrap4.min.js"></script>
+    </body>
+
+</html>

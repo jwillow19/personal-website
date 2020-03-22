@@ -1,0 +1,279 @@
+/* Adding css element to all style using '*' */
+* {
+    margin:0;
+    padding:0;
+}
+
+/* ==============NavBar================*/
+.navbar-default{
+    margin: 15px;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-color: #444;
+    transition: all 1s;
+    top: 0;
+}
+.navbar-nav > li > a{
+    font-family:'Press+Start+2P', sans-serif;
+    font-size: 18px;
+    padding-left: 55px; 
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.navbar-nav > li > a:hover{
+    color:#129cf3;
+    transition: all 0.5s;
+}
+
+/* =======Body==========*/
+body {
+    font-family: 'Press+Start+2P', sans-serif;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.pressStart2P{
+    font-family: 'Press+Start+2P', sans-serif;
+    color: white;
+}
+.titleMain {
+    font-family: 'Press+Start+2P', sans-serif;
+    letter-spacing: 40px;
+}
+.textMain{
+    padding-top: 10px;
+    line-height: 35px;
+}
+/* ================= Header =================== */
+.header {
+    background: url("../images/header-bg.jpg");
+    background-attachment: fixed;
+    height: 100vh;
+    background-repeat: no-repeat;
+    /* position 50% on x-y axis */
+    background-position: center center;
+    background-size: cover;
+
+}
+/* header-overlay is used to add transparent effect to the header */
+.header-overlay{
+    background-color: rgba(31,31,31,0.4);
+    height: 100vh;
+}
+
+
+
+/* ============= About Me CSS ============== */
+.darkBackground{
+    background-color: black;
+}
+.headSub{
+    position: relative;
+    display: flex;
+    -moz-box-align: center;
+    align-items: center;
+    width: 100%;
+    font-family: 'Press+Start+2P', sans-serif;
+    color: white;
+    letter-spacing: 12px;
+    margin-top: 70px;
+    margin-top: 50px;
+}
+.headSub:after{
+    content: "";
+    display: block;
+    height: 1px;
+    width: 350px;
+    background-color: rgb(242, 242, 243);
+    position: relative;
+    top: -5px;
+    margin-left: 30px;
+}
+.textSub{
+    font-family: 'Press+Start+2P', sans-serif;
+    font-size: 16px;
+    padding-top: 20px;
+}
+.aboutContainer{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(180px, 200px));
+    overflow: hidden;
+    list-style: outside;
+    padding-left: 10px;
+}
+.listAbout{
+    font-family: 'Press+Start+2P', sans-serif;
+    font-size: 12px;
+    margin-top:20px;
+    margin-bottom:35px;
+}
+.itemList{
+    line-height: 16px;
+    padding-bottom: 5px;
+}
+/*=============== Project ============== */
+.project-head{
+    position: relative;
+    display: flex;
+    width: 100%;
+    font-family: 'Press+Start+2P', sans-serif;
+    color: black;
+
+}
+.project-grid{
+    background: #D9D9D9;
+    padding-top: 40px;
+    padding-bottom: 80px;
+}
+.project-box{
+    background-color: #A6A6A6;
+    border: 1px solid #BFBFBF;
+    border-radius: 5px;
+    margin: 1px;
+    padding: 10px;
+
+}
+
+.project-outline{
+    font-family: 'Press+Start+2P', sans-serif;
+    padding: 15px;
+}
+.project-outline h4{
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+}
+.project-language{
+    padding-right: 15px;
+    display: inline;
+    list-style: none;
+    color: #404040;
+}
+/* ============== Contact ============== */
+.contact-form {
+    margin-top: 30px;
+}
+.contact-form .form-control{
+    display: block;
+    width: 100%;
+    height: 50px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 21px;
+    color: #555;
+    background-color: transparent;
+    border: 1px solid #aeaeae;
+    border-radius: 3px;
+    opacity: .8;
+    outline: 0px !important;
+    transition: all 1s;
+}
+
+/* modify message id element */
+#message{
+    height: 181px;
+    resize: none;
+}
+/* adding css to submit button pseudo classes */
+.submit-btn,
+.submit-btn:active,
+.submit-btn:focus,
+.submit-btn:visited {
+    background-color: transparent;
+    float: right;
+    width: 20%;
+    height: 40px;
+    font-size: 18px;
+    border: 1px solid #129cf3;
+    border-radius: 90px;
+    margin-top: 30px;
+    /* add transition delay effect to btn */
+    transition: all 1s;
+}
+.submit-btn:hover{
+    background: #129cf3;
+    color: white;
+    border-color: #129cf3;
+}
+.headContact{
+    position: relative;
+    display: flex;
+    -moz-box-align: center;
+    align-items: center;
+    width: 100%;
+    font-family: 'Press+Start+2P', sans-serif;
+    font-weight: 100;
+    color:black;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+/* Adding css property to ul,li,a subclasses under social-icons class */
+.social-icons{
+    padding-top: 50px;
+    padding-bottom: 70px;
+    
+}
+/* editting css attribute for unorder list */
+.social-icons ul{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: rgba(5, 5, 5, 0);
+}
+/* editting css attribute for list items in unorder list */
+.social-icons ul li{
+    list-style: none;
+    display: inline;
+}
+/* editting css attribute for hyperlink in each list item */
+.social-icons ul li a{
+    text-decoration: none;
+    display: inline-block;
+    border: 1px solid;
+    border-radius: 90px;
+    width:50px;
+    height: 50px;
+    line-height: 50px;
+}
+/* editting css attribute for hover effects on hyperlinks */
+.social-icons ul li a:hover{
+    background: #129cf3;
+    color: white;
+    border-color: #129cf3;
+    transition: all 1s;
+}
+/* editting css attribute for item in hyperlink */
+.social-icons ul li a i{
+    font-size: 20px;
+}
+
+/*========== Footer ============*/
+.footer{
+    padding-bottom: 35px;
+    padding-top: 35px;
+    background-color: black;
+    text-align: center;
+}
+.footer-btn li{
+    list-style: none;
+    display: inline;
+}
+.footer-btn li a{
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Press+Start+2P', sans-serif;
+    color: white;
+    padding: 14px 16px;
+}
+.footer-btn li a:hover{
+    background-color:white;
+    color: black;
+    transition: all 1s;
+}
