@@ -5,6 +5,11 @@ const bodyParser = require('body-parser')
 
 const app = express()
 
+let message = ""
+
+// Setting up view engine
+app.set('view engine', 'ejs');
+
 app.use(bodyParser.urlencoded({extended: true}))
 app.use(express.static('public'))
 
@@ -13,6 +18,13 @@ app.listen(3000, function(req, res){
 })
 
 app.get('/', function(req, res){
-    res.sendFile(__dirname + '/index.html')
+    // res.sendFile(__dirname + '/index.html')
+    res.render('personal', {msg: message})
+})
+
+app.post('/', function(req, res){
+    console.log(req.body)
+    message = 'Email sent!'
+    res.redirect('/')
 })
 
