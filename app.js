@@ -19,12 +19,24 @@ app.listen(3000, function(req, res){
 
 app.get('/', function(req, res){
     // res.sendFile(__dirname + '/index.html')
-    res.render('personal', {msg: message})
+    res.render('personal')
 })
 
-app.post('/', function(req, res){
+// app.post('/', function(req, res){
+//     console.log(req.body)
+//     message = 'Email sent!'
+//     res.redirect('/')
+// })
+
+app.get('/contact', function(req, res){
+    // res.redirect('contact')
+    res.render('contact', {msg: message})
+
+    //[*] nodemailer
+})
+
+app.post('/contact', function(req, res){
     console.log(req.body)
     message = 'Email sent!'
-    res.redirect('/')
+    res.redirect('/contact')
 })
-

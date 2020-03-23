@@ -26,8 +26,10 @@
 
         <!--Header-->
         <header class='header' id='HOME'>
+
             <div class="container" role="navigation" >
- 
+
+                <!-- Bootstrap navbar -->
                 <nav class="navbar navbar-expand-md navbar-dark navbar-default fixed-top ">
                     
                     <!--Collapse button -->
@@ -50,7 +52,7 @@
                             </li>
                         </ul>
                         <ul class="navbar-nav navbar-right" >
-                            <li><a class="nav-link" style='margin-right:50px; padding-left:0px' href="#CONTACT">Contact</a></li>
+                            <li><a class="nav-link" style='margin-right:50px; padding-left:0px' href="/contact">Contact</a></li>
                         </ul>
                         
                     </div>
@@ -58,35 +60,29 @@
                 </nav>
 
             </div>
+
+            <div class='container'>
             
-            <!-- Bootstrap navbar -->
-            
-
-
-            <div class="header-overlay">
-
-                <div class='container'>
-                    
-                    <!-- First row of homepage container - NavBar-->
-                    
-
-                    <!-- Second row - Main Content -->
-                    <div class='row'>
-                        <div class='center pressStart2P'>
-                            <h1 class='titleMain'>JEFF WON</h1>
-                            <h3 style="margin-top: 0" class='textMain'>In the process of exploring different
-                                aspects of technology and expanding my interests. Whilst self learning topics in computer engineering through research & development. </h3>
-                        </div>
+                
+                <!-- Main Content -->
+                <div class='row'>
+                    <div class='center pressStart2P'>
+                        <h1 class='titleMain'>JEFF WON</h1>
+                        <h3 style="margin-top: 0" class='textMain'>In the process of exploring different
+                            aspects of technology and expanding my interests. Whilst self learning topics in computer engineering through research & development. </h3>
                     </div>
-
                 </div>
+
+            
             </div>
 
-        </header>
+        </header>    
+            
         
-        
+        <!-- A black seperator to store ABOUT ID (more spacous) -->
+        <div style="border-top:30px solid black;" id='ABOUT'></div>
         <!-- About Me section -->
-        <div class="container-fluid darkBackground" id='ABOUT'>
+        <div class="container-fluid darkBackground">
             <div class='container'>
                 <div class='row'>
                     <div class='col-md-8'>
@@ -132,11 +128,13 @@
             </div>
         </div>
 
+        <!-- A white seperator to store PROJECT ID (more spacous) -->
+        <div style="border-top:60px solid white;" id='PROJECT'></div>
         <!--- Project Section - Grid Style: Title, Description, Language -->
-        <div class='container project-grid' id='PROJECT'>
+        <div class='container project-grid' >
             <h3 class='project-head'>Noteworthy Projects & Achievements</h3>
 
-            <!-- TESTING -->
+            <!-- Bootstrap card template to put projects -->
             <div class="card-deck">
                 <div class="card project-box">
                     <div class="card-body">
@@ -212,63 +210,12 @@
                     </div>
                 </div>
 
-                
-
             </div>
-            <!-- TEST -->
-
-            
 
         </div>
 
-        <!-- Contact/Social Media section -->
-        <div class='container-fluid contact-form' id='CONTACT'>
-
-            <div class='container'>
-                <div class='row'>
-                    <div class='col-md-12 col-md-offset-5'>
-                        <div class='headContact'>
-                            <h2>Contact</h2>
-                            <%= msg %>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- contact form -->
-            <div class='container'
-            >
-                <form method="POST" action='/contact'>
-                    <div class="row">
-                        <div class='col-md-4'>
-                                <div class="form-group">
-                                    <input type='text', class='form-control', id='name', required=''  placeholder="Name">
-                                </div>
-                                <div class="form-group">
-                                    <input type='email', class='form-control', id='email', required='' placeholder="Email Address">
-                                </div>
-                                <div class="form-group">
-                                    <input type='text', class='form-control', id='subject', required='' placeholder="Subject">
-                                </div>
-                        </div>
-                        
-                        <!-- Name , Email. Reason - Form[Label(input), Label(input),...]-->
-                
-                        <!-- Message -->
-                        <div class='col-md-8'>
-                            <textarea name='message' class='form-control', id='message', rows='11' cols='10'
-                            placeholder="Message"></textarea>
-                        </div>
-
-                        
-                    </div>
-
-                    <button type="submit" class='btn btn-default submit-btn form-submit'>SEND</button>
-
-                </form>
-
-            </div>
-
+        
+        <div class='container-fluid darkGrayBackground'>
             <!-- Adding social icons -->
             <div class='container'>
                 <div class='row'>
@@ -306,7 +253,7 @@
                     </div>
 
                     <div class='col-md-3'>
-                        <li><a style="color: white;" href="#CONTACT">Contact</a></li>
+                        <li><a style="color: white;" href="/contact">Contact</a></li>
                     </div>
 
                     

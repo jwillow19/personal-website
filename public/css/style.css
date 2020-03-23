@@ -53,19 +53,15 @@ body {
 }
 /* ================= Header =================== */
 .header {
-    background: url("../images/header-bg.jpg");
+    /* Adds dark gradient to background image */
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../images/header-bg.jpg");
     background-attachment: fixed;
     height: 100vh;
     background-repeat: no-repeat;
     /* position 50% on x-y axis */
     background-position: center center;
     background-size: cover;
-
-}
-/* header-overlay is used to add transparent effect to the header */
-.header-overlay{
-    background-color: rgba(31,31,31,0.4);
-    height: 100vh;
+    
 }
 
 
@@ -73,6 +69,7 @@ body {
 /* ============= About Me CSS ============== */
 .darkBackground{
     background-color: black;
+    border-bottom: 30px solid black
 }
 .headSub{
     position: relative;
@@ -156,8 +153,13 @@ body {
     color: #404040;
 }
 /* ============== Contact ============== */
+.darkGrayBackground{
+    background-color: #303030;
+    
+    margin-top: 80px;
+}
 .contact-form {
-    margin-top: 30px;
+    margin: 309px;
 }
 .contact-form .form-control{
     display: block;
@@ -277,3 +279,5 @@ body {
     color: black;
     transition: all 1s;
 }
+
+/*==========Contact Page====================*/
